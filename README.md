@@ -12,3 +12,10 @@ Finally, I check focus — whether they were thinking only about themselves or a
 Each answer leads to a fixed next step. Same answers always give the same result.
 
 At the end, the system gives a short summary to help the user reflect on their day.
+
+
+
+
+https://lucid.app/lucidspark/8d15792b-c813-4099-9e74-0b8e5d671480/edit?viewport_loc=-3977%2C474%2C5616%2C2602%2C0_0&invitationId=inv_04ea0832-14d3-47c6-b895-b740923d1798   
+
+  this is image link click to open this link 
