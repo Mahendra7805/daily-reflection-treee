@@ -1,0 +1,60 @@
+"id,parentId,type,text,options,target,signal"
+
+"START,null,start,Good evening. Let's look at your day.,,,"
+
+"A1_Q1,START,question,How would you describe your day?,Tough|Productive|Mixed|Frustrating,,"
+
+"A1_D1,A1_Q1,decision,,answer=Productive|Mixed:A1_Q2_HIGH;answer=Tough|Frustrating:A1_Q2_LOW,,"
+
+"A1_Q2_HIGH,A1_D1,question,When things went well today, what made it happen?,I prepared well|I adapted|Team helped|Got lucky,,axis1:internal"
+
+"A1_Q2_LOW,A1_D1,question,When things got difficult, what did you do?,Tried to fix it|Waited for help|Felt stuck|Blamed situation,,axis1:external"
+
+"A1_R1,A1_Q2_HIGH,reflection,You stayed in control of your actions today.,,axis1:internal"
+
+"A1_R2,A1_Q2_LOW,reflection,It felt outside your control. But you still made some choices.,,axis1:external"
+
+"BRIDGE_1,A1_R1,bridge,Now let's move to what you gave today.,,A2_Q1,"
+"BRIDGE_1B,A1_R2,bridge,Now let's move to what you gave today.,,A2_Q1B,"
+
+"A2_Q1,BRIDGE_1,question,Which moment fits your day?,Helped someone|Did extra work|Expected recognition|Felt others should do more,,"
+
+"A2_Q1B,BRIDGE_1B,question,Which moment fits your day?,Helped someone|Did extra work|Expected recognition|Felt others should do more,,"
+
+"A2_D1,A2_Q1,decision,,answer=Helped someone|Did extra work:A2_CONTRIB;answer=Expected recognition|Felt others should do more:A2_ENTITLE,,"
+
+"A2_D1B,A2_Q1B,decision,,answer=Helped someone|Did extra work:A2_CONTRIB;answer=Expected recognition|Felt others should do more:A2_ENTITLE,,"
+
+"A2_CONTRIB,A2_D1,question,Why did you do that?,Wanted to help|Felt responsible|Team needed it,,axis2:contribution"
+
+"A2_ENTITLE,A2_D1,question,What bothered you most?,No credit|Others not working|Unfair situation,,axis2:entitlement"
+
+"A2_R1,A2_CONTRIB,reflection,You focused on contributing today.,,axis2:contribution"
+
+"A2_R2,A2_ENTITLE,reflection,You expected more today. Noticing this is important.,,axis2:entitlement"
+
+"BRIDGE_2,A2_R1,bridge,Now think beyond yourself.,,A3_Q1,"
+"BRIDGE_2B,A2_R2,bridge,Now think beyond yourself.,,A3_Q1B,"
+
+"A3_Q1,BRIDGE_2,question,Who was most important in your day?,Only me|My team|A colleague|Customer,,"
+
+"A3_Q1B,BRIDGE_2B,question,Who was most important in your day?,Only me|My team|A colleague|Customer,,"
+
+"A3_D1,A3_Q1,decision,,answer=Only me:A3_SELF;answer=My team|A colleague|Customer:A3_OTHERS,,"
+
+"A3_D1B,A3_Q1B,decision,,answer=Only me:A3_SELF;answer=My team|A colleague|Customer:A3_OTHERS,,"
+
+"A3_SELF,A3_D1,question,What were you focused on?,My work|My stress|My results,,axis3:self"
+
+"A3_OTHERS,A3_D1,question,What mattered most?,Team success|Helping someone|Customer outcome,,axis3:others"
+
+"A3_R1,A3_SELF,reflection,Your focus stayed on yourself today.,,axis3:self"
+
+"A3_R2,A3_OTHERS,reflection,You thought beyond yourself today.,,axis3:others"
+
+"SUMMARY1,A3_R1,summary,Today you focused more on yourself. Try to expand your focus tomorrow.,,,"
+
+"SUMMARY2,A3_R2,summary,Today you thought beyond yourself. Keep building on this.,,,"
+
+"END1,SUMMARY1,end,See you tomorrow.,,,"
+"END2,SUMMARY2,end,See you tomorrow.,,,"
